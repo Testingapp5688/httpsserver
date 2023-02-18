@@ -3,9 +3,10 @@ const https=require('https');
 const server=https.createServer((req,res)=>{
     if(req.url=='/')
     {
-        res.statusCode(200);
         res.write('Done Work');
+        res.write("Done work");
+        res.end();
     }
-}).listen(()=>{
-    console.log("server is Started");
+}).listen(4500,()=>{
+    console.log(4500,"server is Started");
 })
