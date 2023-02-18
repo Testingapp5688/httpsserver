@@ -1,6 +1,7 @@
 const https=require('https');
 
 const server=https.createServer((req,res)=>{
+    res.send(200);
     res.write('Done Work');
     res.end();
 }).listen(()=>{
